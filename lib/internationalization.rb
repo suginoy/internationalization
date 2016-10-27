@@ -54,6 +54,7 @@ module Internationalization
     def reload!
       clear_available_locales_set
       @translations = {}
+      load_translations
     end
 
     def locale_available?(locale)
